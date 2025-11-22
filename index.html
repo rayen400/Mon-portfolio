@@ -3,57 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Portfolio Rayen</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- HEADER -->
     <header>
-        <h1>Bienvenue sur mon Portfolio</h1>
+        <div class="logo">Rayen.</div>
         <nav>
-            <a href="#parcours">Parcours</a>
-            <a href="#interets">Centres d’intérêts</a>
-            <a href="#activites">Activités</a>
+            <a href="#home">Accueil</a>
+            <a href="#about">Parcours</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section id="hero">
-        <h2>Salut, je suis Rayen</h2>
-        <p>Étudiant passionné par le développement web, le design et la technologie.</p>
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Salut, je suis <span>Rayen</span></h1>
+            <p>Développeur Web • Designer • Étudiant passionné de technologies</p>
+            <a class="btn" href="#about">Découvrir</a>
+        </div>
     </section>
 
-    <section id="parcours">
+    <!-- ABOUT -->
+    <section id="about" class="section">
         <h2>Mon Parcours</h2>
-        <p>
-            - Lycée / Bac Informatique<br>
-            - Étudiant en systeme embarqués et mobiles<br>
-            - Connaissances en HTML, CSS, JavaScript, PHP<br>
-            - Expérience avec GitHub, Android Studio, jQuery
-        </p>
+        <div class="card">
+            <p>
+                Étudiant en Système embarqués et Mobiles avec de l'expérience de Programmer des cartes électroniques programmables,
+                intégration API, design graphique et développement mobile avec Android Studio.
+            </p>
+        </div>
     </section>
 
-    <section id="interets">
-        <h2>Mes Centres d’Intérêts</h2>
-        <ul>
-            <li>Développement Web</li>
-            <li>Design Graphique</li>
-            <li>Sport & Fitness</li>
-            <li>Réseaux & Sécurité Informatique</li>
-        </ul>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card">IOT</div>
+            <div class="skill-card">Android Studio</div>
+            <div class="skill-card">Design Graphique</div>
+            <div class="skill-card">Flutter</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">JAVA</div>
+            <div class="skill-card">C</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">PHP/APIs</div>
+        </div>
     </section>
 
-    <section id="activites">
-        <h2>Mes Activités</h2>
-        <p>
-            - Création de sites web statiques<br>
-            - Intégration API avec PHP<br>
-            - Projets Android Studio<br>
-            - Mini-projets en JavaScript
-        </p>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2>Mes Projets</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Site Web Portfolio</h3>
+                <p>Création d’un portfolio responsive et moderne.</p>
+            </div>
+            <div class="project-card">
+                <h3>API Weather</h3>
+                <p>Intégration d’une API météo avec PHP.</p>
+            </div>
+            <div class="project-card">
+                <h3>App Android</h3>
+                <p>Développement d’une application mobile simple.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
+    <!-- CONTACT -->
+    <section id="contact" class="section">
         <h2>Contact</h2>
         <form id="contactForm">
             <input type="text" placeholder="Votre nom" required>
@@ -65,7 +88,7 @@
     </section>
 
     <footer>
-        <p>© 2025 - Mon Portfolio</p>
+        © 2025 Rayen - Portfolio Professionnel
     </footer>
 
 <script src="script.js"></script>
